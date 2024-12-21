@@ -1,13 +1,13 @@
 // Complete the following functions to make our program work!
 
-/**
- * Converts the given Fahrenheit temperature `f` to Celsius.
- * @param {number} f temperature in °F
- * @returns {number} temperature in °C
- */
-function convertToCelsius(f) {
-    // TODO
-  }
+// /**
+//  * Converts the given Fahrenheit temperature `f` to Celsius.
+//  * @param {number} f temperature in °F
+//  * @returns {number} temperature in °C
+//  */
+// function convertToCelsius(f) {
+//     // TODO
+//   }
   
   /**
    * | Temperature | Description |
@@ -18,21 +18,25 @@ function convertToCelsius(f) {
    * | < 100       | "hot"       |
    * | >= 100      | "very hot"  |
    *
-   * @param {number} f temperature in °F
-   * @returns {string} the description from the table above corresponding to
-   * the given Fahrenheit temperature `f`
-   */
-  function describeTemperature(f) {
-    // TODO
-  }
+  //  * @param {number} f temperature in °F
+  //  * @returns {string} the description from the table above corresponding to
+  //  * the given Fahrenheit temperature `f`
+  //  */
+  // function describeTemperature(f) {
+  //   // TODO
+  // }
   
   /**
    * @param {number} limit
    * @returns {number} a random integer in the range [0, `limit`)
    */
   function getRandomInt(limit) {
-    // TODO
+    return Math.round(Math.random() * limit);
+    
   }
+
+
+
   
   // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
   /**
@@ -62,3 +66,40 @@ function convertToCelsius(f) {
   
   f = getRandomInt(110);
   parseFahrenheit(f);
+
+
+
+ function convertToCelsius(f){
+  let Celsius = (f - 32) * (5/9);
+  return Celsius;
+}
+
+
+   function describeTemperature(f) {
+    let message 
+
+   
+
+    if (f <32) { 
+      message = ("very cold.");
+    }
+    else if(f<64)
+    {
+      message =("cold");
+    }
+    else if(f<86)
+    {
+    message =("warm");
+  }
+    else if(f<100)
+    {
+      message = ("very warm");
+    }
+    else if(f<= 100)
+    {
+      message = ("hot");
+    }
+    return message
+    }
+  
+
